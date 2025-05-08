@@ -1,0 +1,303 @@
+
+.header-top{
+    background-color: #07294d;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.header-contact{}
+.header-contact ul{}
+.header-contact ul li{
+    display: inline-block;
+    margin-right: 45px;
+}
+.header-contact ul li:last-child{
+    margin-right: 0;
+}
+
+.header-contact ul li img{}
+.header-contact ul li span {
+	color: #dee2e6;
+	font-size: 15px;
+	font-weight: 400;
+	margin-left: 10px;
+}
+
+.header-opening-time{}
+.header-opening-time p {
+	color: #dee2e6;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+/*===== Header Logo support =====*/
+
+.header-logo-support{
+    border-bottom: 1px solid #cecece;
+}
+
+.support-button{}
+.support-button .support {
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	margin-top: 7px;
+}
+.support-button .support .icon{}
+.support-button .support .cont{
+    margin-left: 15px;
+    margin-top: -2px;
+}
+.support-button .support .cont p{
+    font-size: 13px;
+    color: #8a8a8a;
+    line-height: 18px
+}
+.support-button .support .cont span{
+    font-size: 18px;
+    color: #07294d;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.support-button .button{
+    margin-left: 60px;
+}
+
+/*===== Header Menu =====*/
+
+.navigation{}
+
+.navigation.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	z-index: 999;
+    border-bottom: 1px solid #cecece;
+    -webkit-box-shadow: 0px 0px 191px 0px rgba(0,0,0,0.06);
+    box-shadow: 0px 0px 191px 0px rgba(0,0,0,0.06);
+    -webkit-animation: sticky 2s;
+    animation: sticky 2s;
+}
+
+@-webkit-keyframes sticky {
+    0%{
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+    100%{
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%)
+    }
+}
+
+@keyframes sticky {
+    0%{
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+    100%{
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%)
+    }
+}
+
+.navigation .navbar{
+    padding: 0;
+}
+
+.navigation .navbar .navbar-nav{}
+.navigation .navbar .navbar-nav li{
+    margin-right: 40px;
+    position: relative;
+}
+.navigation .navbar .navbar-nav li:last-child{
+    margin-right: 0;
+}
+
+.navigation .navbar .navbar-nav li a{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #07294d;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    padding: 25px 0;
+}
+
+.navigation .navbar .navbar-nav > li > a.active,
+.navigation .navbar .navbar-nav > li > a:hover{
+    color: #ffc600;
+}
+
+.navigation .navbar .navbar-nav li .sub-menu{
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color: #07294d;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    z-index: 99;
+}
+.navigation .navbar .navbar-nav li:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.navigation .navbar .navbar-nav li .sub-menu li{
+    margin-right: 0;
+}
+.navigation .navbar .navbar-nav li .sub-menu li a{
+    padding: 10px 15px;
+    display: block;
+    border-bottom: 1px solid rgba(255, 198, 0, 0.5);
+    color: #fff;
+}
+.navigation .navbar .navbar-nav li .sub-menu li a.active,
+.navigation .navbar .navbar-nav li .sub-menu li a:hover{
+    padding-left: 20px;
+    color: #ffc600;
+}
+
+.sub-nav-toggler{
+    display: none;
+}
+
+.navigation .navbar .navbar-nav li .sub-menu li:last-child a{
+    border-bottom: 0;
+}
+
+.navbar .navbar-toggler {
+	padding: 3px 8px;
+	margin: 18px 0;
+     -webkit-transform: all 0.4s linear;
+    transform: all 0.4s linear;
+}
+
+.navbar .navbar-toggler .icon-bar {
+	width: 30px;
+	height: 2px;
+	background-color: #07294d;
+	display: block;
+	margin: 5px 0;
+    position: relative;
+     -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.navbar .navbar-toggler.active .icon-bar:nth-of-type(1){
+    -webkit-transform: rotate(46deg);
+    transform: rotate(46deg);
+    top: 7px;
+}
+.navbar .navbar-toggler.active .icon-bar:nth-of-type(2){
+    opacity: 0;
+}
+.navbar .navbar-toggler.active .icon-bar:nth-of-type(3){
+    -webkit-transform: rotate(134deg);
+    transform: rotate(134deg);
+    top: -7px;
+}
+
+.right-icon{}
+.right-icon ul li{
+    display: inline-block;
+    margin-right: 17px;
+    padding: 22px 0;
+}
+.right-icon ul li:last-child{
+    margin-right: 0;
+}
+
+.right-icon ul li a{
+    font-size: 18px;
+    color: #07294d;
+    position: relative;
+    padding-right: 7px;
+}
+.right-icon ul li a span{
+    font-size: 12px;
+    color: #fff;
+    background-color: #ffc600;
+    border-radius: 50%;
+    padding: 0px 4px;
+    position: absolute;
+    top: -5px;
+    right: 0;
+}
+
+/*===== Index-2 =====*/
+
+.header-social ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.header-social ul li:first-child{
+    margin-left: 0;
+}
+
+.header-social ul li a{
+    font-size: 15px;
+    color: #dee2e6;
+}
+
+.navigation-2 .navbar .navbar-nav li{
+    margin-right: 40px;
+}
+
+.navigation-2 .navbar .navbar-nav li a{
+	padding: 45px 0;
+}
+.navigation-2 .right-icon ul li {
+	padding: 42px 0;
+}
+.navigation-2.sticky .navbar .navbar-nav li a{
+    padding: 30px 0;
+}
+.navigation-2.sticky .right-icon ul li{
+    padding: 25px 0;
+}
+
+/*===== Index-3 =====*/
+
+.navigation-3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: none;
+    z-index: 99;
+}
+
+.navigation-3 .navbar .navbar-nav li a,
+.navigation-3 .right-icon ul li a{
+    color: #fff;
+}
+
+.navigation-3.sticky .navbar .navbar-nav li a,
+.navigation-3.sticky .right-icon ul li a{
+    color: #07294d;
+}
+.navigation-3.sticky .navbar .navbar-nav > li > a.active,
+.navigation-3.sticky .navbar .navbar-nav > li > a:hover{
+    color: #ffc600;
+}
+
+.navigation-3 .navbar .navbar-toggler .icon-bar{
+    background-color: #fff;
+}
+.navigation-3.sticky .navbar .navbar-toggler .icon-bar{
+    background-color: #07294d;
+}
