@@ -203,7 +203,7 @@ const Navbar = () => {
 
                 <div className="col-lg-4 col-md-4">
                   <div className="logo">
-                    <Link className="student-portal" href="/student-portal">
+                    <Link className="school-portal" href="/student-portal">
                       SCHOOL&nbsp;PORTAL
                     </Link>
                   </div>

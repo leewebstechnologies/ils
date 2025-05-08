@@ -328,7 +328,7 @@
     margin-right: 20px;
 }
 
-.student-portal {
+.school-portal {
     /* margin-left: 70px; */
     color: #960466;
     list-style: none;
@@ -336,7 +336,7 @@
     border: 1px solid #960466;
 }
 
-.student-portal:hover {
+.school-portal:hover {
     background-color: #960466;
     color: #fff;
     border: 1px solid #960466;
@@ -350,11 +350,19 @@
 
 
 @media (max-width: 768px) {
-  .student-portal {
-
+  .school-portal {
+    margin-left: 0px;
+    padding: 5px 10px;
+    border: 1px solid #960466;
+    margin-bottom: 10px;
     display: flex;
-    margin-top: 10px;    
+    align-items: center;
+    justify-content: center;
   }
 
+  .logo {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
 }
 
