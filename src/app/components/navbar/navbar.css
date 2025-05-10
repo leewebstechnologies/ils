@@ -351,18 +351,25 @@
 
 @media (max-width: 768px) {
   .school-portal {
-    margin-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
     padding: 5px 10px;
-    border: 1px solid #960466;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 5px;
   }
 
   .logo {
-    margin-left: 0px;
+    display: flex;
     margin-top: 10px;
   }
+
+  .imperial-legacy {
+    display: flex;
+    align-items: center;
+  }
+
+
+
+
 }
 

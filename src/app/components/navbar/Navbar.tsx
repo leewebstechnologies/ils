@@ -3,6 +3,34 @@ import "./navbar.css";
 import Image from "next/image";
 import logo from "../../images/logo1.png";
 
+// const links = [
+//   {
+//     id: 1,
+//     title: "Home",
+//     url: "/",
+//   },
+//   {
+//     id: 2,
+//     title: "About",
+//     url: "/about",
+//   },
+//   {
+//     id: 3,
+//     title: "Projects",
+//     url: "/projects",
+//   },
+//   {
+//     id: 4,
+//     title: "Blog",
+//     url: "/blog",
+//   },
+//   {
+//     id: 5,
+//     title: "Contact",
+//     url: "/contact",
+//   },
+// ];
+
 const Navbar = () => {
   return (
     <header id="header-part">
@@ -14,12 +42,15 @@ const Navbar = () => {
                 <ul>
                   <li>
                     <img src="images/all-icon/map.png" alt="icon" />
-                    <span>127/5 Mark street, New york</span>
+                    <span>
+                      Plot 8 Great Imperial Estate, Off Miracle Avenue, Magboro,
+                      Ogun State.
+                    </span>
                   </li>
-                  <li>
+                  {/* <li>
                     <img src="images/all-icon/email.png" alt="icon" />
                     <span>info@yourmail.com</span>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -41,17 +72,17 @@ const Navbar = () => {
                 <li>
                   <Link
                     className="social-media-icon"
-                    href="https://web.facebook.com/Lacreteconcept"
+                    href="https://www.tiktok.com/@imperial_legacyschool?_t=ZM-8wBUcy17xEF&_r=1"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <i className="fa-brands fa-x-twitter"></i>
+                    <i className="icon fa-brands fa-tiktok"></i>
                   </Link>
                 </li>
                 <li>
                   <Link
                     className="social-media-icon"
-                    href="https://web.facebook.com/Lacreteconcept"
+                    href="https://www.instagram.com/imperial_legacyschool?igsh=MXVtMGM0czlrc3ZuZw%3D%3D"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -61,7 +92,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     className="social-media-icon"
-                    href="https://wa.me/+2348028752742"
+                    href="https://wa.me/+2348139604432"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -79,14 +110,12 @@ const Navbar = () => {
             <div className="col-lg-10 col-md-10 col-sm-9 col-8">
               <nav className="navbar navbar-expand-lg">
                 <div className="col-lg-4 col-md-4">
-                  <div className="logo">
-                    <Link href="/">
-                      <Image src={logo} alt="logo" width={70} height={70} />
-                      <span className="imperial-legacy">
-                        IMPERIAL&nbsp;LEGACY&nbsp;SCHOOL
-                      </span>
-                    </Link>
-                  </div>
+                  <Link href="/" className="logo">
+                    <Image src={logo} alt="logo" width={70} height={70} />
+                    <span className="imperial-legacy">
+                      IMPERIAL&nbsp;LEGACY&nbsp;SCHOOL
+                    </span>
+                  </Link>
                 </div>
                 {/* <Link className="logo" href="/">
                   <Image src={logo} alt="logo" width={70} height={70} />
@@ -121,37 +150,29 @@ const Navbar = () => {
                       <Link href="/admission">Admission</Link>
                       <ul className="sub-menu">
                         <li>
-                          <Link className="active" href="/why-choose-ils">
+                          <Link className="active" href="/why">
                             Why Choose ILS?
                           </Link>
                         </li>
                         <li>
-                          <Link href="/entrance-examination">
-                            Entrance Examination
-                          </Link>
+                          <Link href="/entrance">Entrance Examination</Link>
                         </li>
                       </ul>
                     </li>
                     <li className="nav-item">
-                      <Link href="/about">About&nbsp;Us</Link>
+                      <Link href="#">About&nbsp;Us</Link>
                       <ul className="sub-menu">
                         <li>
-                          <Link href="/imperal-legacy">
-                            About IMPERIAL LEGACY SCHOOL
-                          </Link>
+                          <Link href="/ils">About IMPERIAL LEGACY SCHOOL</Link>
                         </li>
                         <li>
-                          <Link href="/executive-director">
-                            Executive Director
-                          </Link>
+                          <Link href="/director">Executive Director</Link>
                         </li>
                         <li>
-                          <Link href="/executive-director">
-                            Leadership Team
-                          </Link>
+                          <Link href="/team">Leadership Team</Link>
                         </li>
                         <li>
-                          <Link href="/executive-director">Careers</Link>
+                          <Link href="/careers">Careers</Link>
                         </li>
                         <li>
                           <Link href="/faqs">Faqs</Link>
@@ -159,10 +180,10 @@ const Navbar = () => {
                       </ul>
                     </li>
                     <li className="nav-item">
-                      <Link href="/academics">Academics</Link>
+                      <Link href="#">Academics</Link>
                       <ul className="sub-menu">
                         <li>
-                          <Link href="/key-dates">
+                          <Link href="/calendar">
                             KEY DATES / SCHOOL CALENDAR
                           </Link>
                         </li>
@@ -170,16 +191,16 @@ const Navbar = () => {
                           <Link href="/creche">CRECHE</Link>
                         </li>
                         <li>
-                          <Link href="/executive-director">PRE-SCHOOL</Link>
+                          <Link href="/preschool">PRE-SCHOOL</Link>
                         </li>
                         <li>
                           <Link href="/elementary">ELEMENTARY</Link>
                         </li>
                         <li>
-                          <Link href="/e-library">E-LIBRARY</Link>
+                          <Link href="/elibrary">E-LIBRARY</Link>
                         </li>
                         <li>
-                          <Link href="/extra-curricular-activities">
+                          <Link href="/curricular">
                             EXTRA-CURRICULAR ACTIVITIES
                           </Link>
                         </li>

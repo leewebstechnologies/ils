@@ -1,0 +1,146 @@
+.singel-blog{
+  overflow: hidden;
+  border-radius: 5px;
+}
+.singel-blog .blog-thum img{
+  width: 100%;
+}
+
+.singel-blog .blog-cont{
+  padding: 40px 50px;
+  background-color: #fff;
+}
+.singel-blog .blog-cont a{
+  display: block;
+}
+.singel-blog .blog-cont h3{
+  font-size: 36px;
+  color: #000;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.singel-blog .blog-cont a:hover h3{
+  color: #ffc600;
+}
+
+.singel-blog .blog-cont ul {
+  padding: 20px 0;
+}
+.singel-blog .blog-cont ul li{
+  display: inline-block;
+  margin-right: 30px;
+}
+.singel-blog .blog-cont ul li:last-child{
+  margin-right: 0;
+}
+.singel-blog .blog-cont ul li a{
+  font-size: 15px;
+  color: #8a8a8a;
+}
+.singel-blog .blog-cont ul li a i{
+  color: #ffc600;
+  margin-right: 5px;
+}
+.singel-blog .blog-cont p{}
+
+
+.saidbar{}
+.saidbar .saidbar-search{
+  padding: 35px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.saidbar .saidbar-search form{
+  position: relative;
+}
+.saidbar .saidbar-search form input{
+  width: 100%;
+  height: 45px;
+  padding: 0 25px;
+  background-color: #f6f6f6;
+  color: #8a8a8a;
+  border-radius: 5px;
+  font-size: 15px;
+  border: 0;
+}
+.saidbar .saidbar-search form button{
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 20px;
+  font-size: 16px;
+  color: #8a8a8a;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.saidbar .categories{
+  background-color: #fff;
+  padding: 30px 35px 25px;
+  border-radius: 5px;
+}
+.saidbar .categories h4,
+.saidbar .saidbar-post h4{
+  font-size: 24px;
+  color: #07294d;
+}
+.saidbar .categories ul{
+  padding-top: 15px;
+}
+.saidbar .categories ul li{
+  line-height: 40px;
+}
+.saidbar .categories ul li a{
+  color: #8a8a8a;
+  font-weight: 15;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.saidbar .categories ul li a:hover{
+  color: #ffc600;
+}
+
+.saidbar .saidbar-post{
+  padding: 30px 35px 35px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.saidbar .saidbar-post ul{
+  padding-top: 10px;
+}
+.saidbar .saidbar-post ul li a{
+  display: block;
+  margin-top: 30px;
+}
+.saidbar .saidbar-post ul li a .singel-post{
+  overflow: hidden;
+}
+.saidbar .saidbar-post ul li a .singel-post .thum{
+  float: left;
+  padding-right: 20px;
+}
+.saidbar .saidbar-post ul li a .singel-post .thum img{
+  border-radius: 5px;
+}
+
+.saidbar .saidbar-post ul li a .singel-post .cont{}
+.saidbar .saidbar-post ul li a .singel-post .cont h6{
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+  padding-bottom: 10px;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.saidbar .saidbar-post ul li a .singel-post .cont h6:hover{
+  color: #ffc600;
+}
+
+.saidbar .saidbar-post ul li a .singel-post .cont span{
+  font-size: 14px;
+  color: #8a8a8a;
+}

@@ -1,18 +1,20 @@
-import { Geist, Geist_Mono } from "next/font/google";
+// import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 import BootstrapClient from "./components/BootstrapClient";
 import Script from "next/script";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 export const metadata = {
   title: "IMPERIAL LEGACY SCHOOL - BEST SCHOOL FOR WARDS",
@@ -41,7 +43,7 @@ export default function RootLayout({ children }) {
           referrerPolicy="no-referrer"
         />
         {/*====== Title ======*/}
-        <title>IMPERIAL LEGACY SCHOOL - BEST SCHOOL FOR WARDS</title>
+        {/* <title>IMPERIAL LEGACY SCHOOL - BEST SCHOOL FOR WARDS</title> */}
         {/*====== Favicon Icon ======*/}
         <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
         {/*====== Slick css ======*/}
@@ -66,6 +68,7 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="css/responsive.css" />
       </head>
       <body>
+        <Navbar />
         {children}
         <BootstrapClient />
         <Script src="js/vendor/modernizr-3.6.0.min.js"></Script>
@@ -94,6 +97,7 @@ export default function RootLayout({ children }) {
 
         <Script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></Script>
         <Script src="js/map-script.js"></Script>
+        <Footer />
       </body>
     </html>
   );

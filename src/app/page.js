@@ -2,11 +2,11 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
       <section id="slider-part" className="slider-active">
         <div
           className="single-slider bg_cover pt-150"
@@ -18,33 +18,32 @@ export default function Home() {
               <div className="col-xl-7 col-lg-9">
                 <div className="slider-cont">
                   <h1 data-animation="bounceInLeft" data-delay="1s">
-                    Choose the right theme for education
+                    CONDUCIVE ENVIRONMENT FOR LEARNING
                   </h1>
                   <p data-animation="fadeInUp" data-delay="1.3s">
-                    Donec vitae sapien ut libearo venenatis faucibus. Nullam
-                    quis ante. Etiam sit amet orci eget eros faucibus tincidunt
-                    Sed fringilla mauri amet nibh.
+                    Our classrooms and study areas are very conducive for
+                    learning.
                   </p>
                   <ul>
                     <li>
-                      <a
+                      <Link
                         data-animation="fadeInUp"
                         data-delay="1.6s"
                         className="main-btn"
-                        href="#"
+                        href="/ils"
                       >
                         Read More
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         data-animation="fadeInUp"
                         data-delay="1.9s"
                         className="main-btn main-btn-2"
-                        href="#"
+                        href="/contact"
                       >
                         Get Started
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -68,27 +67,26 @@ export default function Home() {
                     Choose the right theme for education
                   </h1>
                   <p data-animation="fadeInUp" data-delay="1.3s">
-                    Donec vitae sapien ut libearo venenatis faucibus. Nullam
-                    quis ante. Etiam sit amet orci eget eros faucibus tincidunt
-                    Sed fringilla mauri amet nibh.
+                    Our classrooms and study areas are very conducive for
+                    learning.
                   </p>
                   <ul>
                     <li>
-                      <a
+                      <Link
                         data-animation="fadeInUp"
                         data-delay="1.6s"
                         className="main-btn"
-                        href="#"
+                        href="/ils"
                       >
                         Read More
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a
                         data-animation="fadeInUp"
                         data-delay="1.9s"
                         className="main-btn main-btn-2"
-                        href="#"
+                        href="/contact"
                       >
                         Get Started
                       </a>
@@ -115,20 +113,19 @@ export default function Home() {
                     Choose the right theme for education
                   </h1>
                   <p data-animation="fadeInUp" data-delay="1.3s">
-                    Donec vitae sapien ut libearo venenatis faucibus. Nullam
-                    quis ante. Etiam sit amet orci eget eros faucibus tincidunt
-                    Sed fringilla mauri amet nibh.
+                    Our classrooms and study areas are very conducive for
+                    learning.
                   </p>
                   <ul>
                     <li>
-                      <a
+                      <Link
                         data-animation="fadeInUp"
                         data-delay="1.6s"
                         className="main-btn"
-                        href="#"
+                        href="/ils"
                       >
                         Read More
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a
@@ -1367,230 +1364,9 @@ export default function Home() {
                 <img src="images/patnar-logo/p-3.png" alt="Logo" />
               </div>
             </div>
-          </div>{" "}
-          {/* row */}
-        </div>{" "}
-        {/* container */}
+          </div>
+        </div>
       </div>
-      {/*====== PATNAR LOGO PART ENDS ======*/}
-      {/*====== FOOTER PART START ======*/}
-      <footer id="footer-part">
-        <div className="footer-top pt-40 pb-70">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-4 col-md-6">
-                <div className="footer-about mt-40">
-                  <div className="logo">
-                    <a href="#">
-                      <img src="images/logo-2.png" alt="Logo" />
-                    </a>
-                  </div>
-                  <p>
-                    Gravida nibh vel velit auctor aliquetn quibibendum auci elit
-                    cons equat ipsutis sem nibh id elit. Duis sed odio sit amet
-                    nibh vulputate.
-                  </p>
-                  <ul className="mt-20">
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-facebook-f" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-google-plus" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-instagram" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>{" "}
-                {/* footer about */}
-              </div>
-              <div className="col-lg-3 col-md-6 col-sm-6">
-                <div className="footer-link mt-40">
-                  <div className="footer-title pb-25">
-                    <h6>Sitemap</h6>
-                  </div>
-                  <ul>
-                    <li>
-                      <a href="index-2.html">
-                        <i className="fa fa-angle-right" />
-                        Home
-                      </a>
-                    </li>
-                    <li>
-                      <a href="about.html">
-                        <i className="fa fa-angle-right" />
-                        About us
-                      </a>
-                    </li>
-                    <li>
-                      <a href="courses.html">
-                        <i className="fa fa-angle-right" />
-                        Courses
-                      </a>
-                    </li>
-                    <li>
-                      <a href="blog.html">
-                        <i className="fa fa-angle-right" />
-                        News
-                      </a>
-                    </li>
-                    <li>
-                      <a href="events.html">
-                        <i className="fa fa-angle-right" />
-                        Event
-                      </a>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-angle-right" />
-                        Gallery
-                      </a>
-                    </li>
-                    <li>
-                      <a href="shop.html">
-                        <i className="fa fa-angle-right" />
-                        Shop
-                      </a>
-                    </li>
-                    <li>
-                      <a href="teachers.html">
-                        <i className="fa fa-angle-right" />
-                        Teachers
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-angle-right" />
-                        Support
-                      </a>
-                    </li>
-                    <li>
-                      <a href="contact.html">
-                        <i className="fa fa-angle-right" />
-                        Contact
-                      </a>
-                    </li>
-                  </ul>
-                </div>{" "}
-                {/* footer link */}
-              </div>
-              <div className="col-lg-2 col-md-6 col-sm-6">
-                <div className="footer-link support mt-40">
-                  <div className="footer-title pb-25">
-                    <h6>Support</h6>
-                  </div>
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-angle-right" />
-                        FAQS
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-angle-right" />
-                        Privacy
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-angle-right" />
-                        Policy
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-angle-right" />
-                        Support
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-angle-right" />
-                        Documentation
-                      </a>
-                    </li>
-                  </ul>
-                </div>{" "}
-                {/* support */}
-              </div>
-              <div className="col-lg-3 col-md-6">
-                <div className="footer-address mt-40">
-                  <div className="footer-title pb-25">
-                    <h6>Contact Us</h6>
-                  </div>
-                  <ul>
-                    <li>
-                      <div className="icon">
-                        <i className="fa fa-home" />
-                      </div>
-                      <div className="cont">
-                        <p>
-                          143 castle road 517 district, kiyev port south Canada
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="icon">
-                        <i className="fa fa-phone" />
-                      </div>
-                      <div className="cont">
-                        <p>+3 123 456 789</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="icon">
-                        <i className="fa fa-envelope-o" />
-                      </div>
-                      <div className="cont">
-                        <p>info@yourmail.com</p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>{" "}
-                {/* footer address */}
-              </div>
-            </div>{" "}
-            {/* row */}
-          </div>{" "}
-          {/* container */}
-        </div>{" "}
-        {/* footer top */}
-        <div className="footer-copyright pt-10 pb-25">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-8">
-                <div className="copyright text-md-left text-center pt-15">
-                  <p>
-                    <a target="_blank" href="https://www.templateshub.net">
-                      Templates Hub
-                    </a>{" "}
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div className="copyright text-md-right text-center pt-15"></div>
-              </div>
-            </div>{" "}
-            {/* row */}
-          </div>{" "}
-          {/* container */}
-        </div>{" "}
-        {/* footer copyright */}
-      </footer>
     </>
   );
 }
