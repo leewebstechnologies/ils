@@ -1,0 +1,31 @@
+.apply{
+  margin-top: -100px;
+  position: relative;
+}
+
+.apply-color-1{
+  background-color: #960466;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.apply-color-2{
+  background-color: #960466;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.apply .apply-cont {
+  padding: 45px 50px 50px;
+}
+.apply .apply-cont h3{
+  font-size: 30px;
+  color: #fff;
+  padding-bottom: 15px;
+}
+.apply .apply-cont p{
+  color: #fff;
+  padding-bottom: 45px;
+}
+.apply .apply-cont .main-btn:hover{
+  border-color: #ffc600;
+}

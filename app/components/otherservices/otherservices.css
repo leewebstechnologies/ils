@@ -1,0 +1,59 @@
+#video-feature{
+  position: relative;
+}
+.feature-bg{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(7, 41, 77, 0.9);
+}
+
+.video{
+  padding-left: 80px;
+}
+.video i{
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  font-size: 24px;
+  background-color: #ffc600;
+  color: #07294d;
+  border-radius: 50%;
+}
+
+.feature{
+  position: relative;
+  z-index: 5;
+}
+.feature .feature-title h3{
+  font-size: 36px;
+  color: #fff;
+  padding-bottom: 15px;
+}
+
+.feature ul li .singel-feature{
+  padding-top: 55px;
+  overflow: hidden;
+}
+.feature ul li .singel-feature .icon{
+
+  overflow: hidden;
+  display: inline-block;
+  padding-right: 30px;
+}
+.feature ul li .singel-feature .cont {
+width: 78%;
+float: left;
+  overflow: hidden;
+}
+.feature ul li .singel-feature .cont h4{
+  font-size: 24px;
+  color: #fff;
+  padding-bottom: 15px;
+}
+.feature ul li .singel-feature .cont p{
+  color: #fff;
+}

@@ -1,0 +1,155 @@
+.gradeschool {
+  background-color: #f0f0f0;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.heroImage {
+  object-fit: cover;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+}
+
+.heroOverlay h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.underline {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #ffc600;
+}
+
+.content {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  font-weight: bold;
+}
+
+
+.curriculum {
+  margin-top: 2rem;
+}
+
+.content ul {
+  list-style-type: disc;
+  padding-left: 24px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.content ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.gradeSchool {
+  margin-top: 3rem;
+  padding-bottom: 50px;
+}
+
+.gradeSchool p {
+  font-weight: bold;
+}
+
+
+.gradeSchoolImg {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gradeSchool h3 {
+  margin-top: 2rem;
+}
+
+.sideBySideCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.infoCard {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-bottom: 4px solid #ffc600;
+  transition: all 0.3s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.infoCard h3 {
+  margin-top: 0 !important;
+  color: #1a1a1a;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.infoCard p {
+  font-size: 0.95rem !important;
+  line-height: 1.6 !important;
+  font-weight: bold !important;
+}
+
+
+.infoCard ul li {
+  font-size: 0.9rem;
+  font-weight: 500 !important;
+}
+
+.eventImages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .sideBySideCards,
+  .eventImages {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    height: 45vh;
+  }
+
+  .heroOverlay {
+    left: 5%;
+    top: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroOverlay h1 {
+    font-size: 1.8rem;
+  }
+}

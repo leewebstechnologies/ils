@@ -1,0 +1,226 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.heroImage {
+  object-fit: cover;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+}
+
+.heroOverlay h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.underline {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #ffc600;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: auto;
+}
+
+.sectionTitle {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: 1.5rem;
+  color: #0b1c2d;
+}
+
+.section p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #444;
+  font-weight: 700;
+}
+
+.lightBg {
+  background: #f0f0f0;
+}
+
+.darkBg {
+  background: #f0f0f0;
+}
+
+.sectionTitle.light {
+  color: #000;
+}
+
+/* Cards */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: #0b1c2d;
+}
+
+/* Lists */
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #ffc600;
+  font-weight: bold;
+}
+
+/* Notes */
+.note {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Fee Box */
+.feeBox {
+  margin-top: 2rem;
+  background: #ffc600;
+  color: #000;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.feeBox h3 {
+  font-size: 1.8rem;
+  margin-top: 0.3rem;
+}
+
+/* Info & Contact */
+.infoGrid,
+.contactGrid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.infoGrid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.contactGrid {
+  color: #fff;
+}
+
+.emails {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+/* Two-column layout */
+.split {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* Highlight box */
+.highlightBox {
+  background: #ffc600;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.highlightBox h3 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+/* Side note */
+.sideNote {
+  background: #960466;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.sideNote h4 {
+  margin-bottom: 0.8rem;
+  color: #fff;
+}
+
+.sideNote p {
+  color: #fff;
+}
+
+/* Contact box */
+.contactBox {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2rem;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.contactBox h4 {
+  margin-bottom: 1rem;
+}
+
+.contactNote {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+p {
+  font-weight: bold;
+}
+
+li {
+  font-weight: bold;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 0;
+  }
+}

@@ -1,0 +1,106 @@
+/* ── Keyframes ───────────────────────────────────────────── */
+
+/* Slide in from the right on mount */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Gentle vertical bob */
+@keyframes floatBob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Expanding pulse ring */
+@keyframes pulseRing {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.75);
+    opacity: 0;
+  }
+}
+
+/* ── Container ───────────────────────────────────────────── */
+.floatingButtons {
+  /* In document flow — sits naturally above the footer */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 24px 53px 24px 0;
+  width: 100%;
+
+  /* Entry animation */
+  animation: slideInRight 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+/* ── Button wrapper (needed for the pulse ring) ──────────── */
+.floatingBtnWhatsapp {
+  position: relative;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  /* Continuous bob */
+  will-change: transform;
+  animation: floatBob 3s ease-in-out infinite;
+
+  /* Smooth hover transition */
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* Pulse ring pseudo-element */
+.floatingBtnWhatsapp::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #25d366; /* WhatsApp green */
+  animation: pulseRing 2s ease-out infinite;
+  pointer-events: none;
+}
+
+/* ── Hover & Active states ───────────────────────────────── */
+.floatingBtnWhatsapp:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 6px 16px rgba(37, 211, 102, 0.55));
+  /* Pause bob while hovering for clarity */
+  animation-play-state: paused;
+}
+
+.floatingBtnWhatsapp:active {
+  transform: scale(0.95);
+}
+
+/* ── Accessibility: respect reduced-motion preference ────── */
+@media (prefers-reduced-motion: reduce) {
+  .floatingButtons {
+    animation: none;
+    opacity: 1;
+  }
+
+  .floatingBtnWhatsapp {
+    animation: none;
+    will-change: auto;
+  }
+
+  .floatingBtnWhatsapp::before {
+    animation: none;
+    opacity: 0;
+  }
+}

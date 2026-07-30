@@ -1,0 +1,151 @@
+/* HERO (same structure as Preschool) */
+.curricular {
+  background-color: #f0f0f0;
+  padding-bottom: 20px;
+}
+.hero {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  min-height: 320px;
+  overflow: hidden;
+}
+
+p {
+  font-weight: bold;
+}
+
+.heroImage {
+  object-fit: cover;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+  color: #fff;
+}
+
+.heroOverlay h1 {
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.underline {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #ffc600;
+}
+
+/* CONTENT */
+.content {
+  max-width: 1100px;
+  margin: 3.5rem auto;
+  padding: 0 1rem;
+  background-color: #f0f0f0;
+}
+
+.introText {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  max-width: 900px;
+}
+
+/* ACTIVITIES */
+.activityGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.6rem;
+  margin-top: 3rem;
+}
+
+.activityCard {
+  background: #fff;
+  padding: 1.8rem;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.activityCard:hover {
+  transform: translateY(-6px);
+}
+
+.activityCard h3 {
+  margin-bottom: 0.6rem;
+}
+
+.activityCard p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* GALLERY */
+.galleryBlock {
+  margin-top: 4.5rem;
+}
+
+.galleryImg {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.galleryText {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.galleryText h3 {
+  font-size: 1.8rem;
+}
+
+.galleryText h4 {
+  margin-top: 0.4rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.galleryText p {
+  max-width: 700px;
+  margin: 1rem auto 1.8rem;
+  line-height: 1.7;
+}
+
+.galleryBtn {
+  display: inline-block;
+  padding: 0.75rem 1.8rem;
+  background: #ffc600;
+  color: #000;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.galleryBtn:hover {
+  background: #e5b000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    height: 45vh;
+  }
+
+  .heroOverlay {
+    left: 5%;
+    top: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroOverlay h1 {
+    font-size: 1.8rem;
+  }
+}

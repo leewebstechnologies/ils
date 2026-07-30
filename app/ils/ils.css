@@ -1,0 +1,177 @@
+#about-part {
+  position: relative;
+  padding-bottom: 12rem;
+  overflow: hidden;
+}
+
+/* Background */
+.img-fluid {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: min(52%, 750px);
+  z-index: -1;
+}
+
+.about-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0) 60%,
+    rgba(255,255,255,1) 100%
+  );
+}
+
+.about-bg img {
+  width: 100%;
+  display: block;
+}
+
+/* ==========================
+   Typography
+========================== */
+
+.about-cont p {
+  padding-top: 1.5rem;
+  line-height: 1.8;
+}
+
+.about-cont p,
+.values li {
+  font-weight: 600;
+}
+
+/* Lists */
+
+.values {
+  list-style: disc;
+  padding-left: 1.4rem;
+  margin: 1rem 0;
+}
+
+.values li {
+  margin-bottom: .75rem;
+}
+
+
+
+.about-event {
+  background: rgba(255,255,255,.96);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.08);
+}
+
+.about-event .event-title h3 {
+  font-size: clamp(1.8rem, 2vw, 2.25rem);
+  color: #111;
+  margin-bottom: .5rem;
+}
+
+.about-event ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-event li:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+.singel-event {
+  padding: 1.5rem 0;
+}
+
+.singel-event span {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  font-size: .9rem;
+  color: #777;
+}
+
+.singel-event span i {
+  color: #ffc600;
+}
+
+.singel-event a {
+  text-decoration: none;
+}
+
+.singel-event h4 {
+  margin: .6rem 0;
+  font-size: 1.4rem;
+  color: #111;
+  transition: color .3s ease;
+}
+
+.singel-event a:hover h4 {
+  color: #ffc600;
+}
+
+/* ==========================
+   Electives / Sports
+========================== */
+
+.elect_sport {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.mt {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 992px) {
+
+  #about-part {
+    padding-bottom: 5rem;
+  }
+
+  .about-bg {
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .about-event {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .about-event {
+    padding: 1.5rem;
+  }
+
+  .about-event .event-title h3 {
+    font-size: 1.7rem;
+  }
+
+  .singel-event h4 {
+    font-size: 1.2rem;
+  }
+
+  .elect_sport {
+    flex-direction: column;
+  }
+
+  .mt {
+    width: 100%;
+  }
+}

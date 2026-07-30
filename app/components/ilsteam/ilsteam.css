@@ -1,0 +1,50 @@
+
+.teachers-cont p{
+    padding-top: 30px;
+}
+
+.singel-teachers{
+    position: relative;
+}
+.singel-teachers .image{
+    border-radius: 5px;
+    overflow: hidden;
+}
+.singel-teachers .image img{
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    width: 100%;
+}
+.singel-teachers:hover .image img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.singel-teachers .cont{
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.singel-teachers .cont a{
+    display: block;
+}
+.singel-teachers .cont a h6{
+    color: #000;
+    font-size: 15px;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.singel-teachers .cont a:hover h6{
+    color: #ffc600;
+}
+
+.singel-teachers .cont span{
+    font-size: 14px;
+    color: #8a8a8a;
+}
