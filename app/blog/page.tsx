@@ -1,4 +1,3 @@
-// import blogImg from "../../images/4.jpg";
 import BlogCard from "../components/BlogCard/BlogCard";
 import FloatingButton from "../components/floatingButton/FloatingButton";
 import "./blog.css";
@@ -38,6 +37,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
+
       <FloatingButton />
     </section>
   );
