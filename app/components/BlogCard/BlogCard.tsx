@@ -2,7 +2,23 @@ import Link from "next/link";
 import Image from "next/image";
 import "./blogCard.css";
 
-const BlogCard = ({ blog }) => {
+interface Blog {
+  id: number;
+  title: string;
+  slug: string;
+  image: string;
+  date: string;
+  author: string;
+  description: string;
+  category: string;
+  excerpt: string;
+}
+
+interface BlogCardProps {
+  blog: Blog;
+}
+
+const BlogCard = ({ blog }: BlogCardProps) => {
   return (
     <article className="single-blog mt-30">
       <div className="blog-thumb">
