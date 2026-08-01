@@ -13,6 +13,7 @@ const Curricular = () => {
             fill
             priority
             className="heroImage"
+            
           />
           <div className="heroOverlay">
             <h1 style={{ color: "#fff" }}>Extra-Curricular Activities</h1>

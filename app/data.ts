@@ -252,3 +252,140 @@ export const galleryImages = [
     alt: "Outdoor play",
   },
 ];
+
+
+
+export const blogData = [
+  {
+    id: 1,
+    slug: "exam-tips",
+    title: "Exam Tips",
+    desc: "How to prepare for exams effectively",
+    image: "/images/blog/blog-1.jpg",
+    content: `Effective Exam Tips: How to Prepare and Perform Your Best
+
+Exams are an important part of a student's academic journey. With proper preparation, good study habits, and a positive mindset, students can approach examinations with greater confidence and perform at their best.
+
+Here are some practical exam tips every student should know:
+
+1. Start Preparing Early
+
+Avoid waiting until a few days before the examination to begin studying. Start your revision early and create a simple study timetable that gives you enough time to cover each subject.
+
+2. Create a Study Timetable
+
+Organize your study time by making a realistic timetable. Give more attention to difficult subjects or topics while still reviewing areas you already understand.
+
+3. Practice with Past Questions
+
+Past examination questions can help you become familiar with the types of questions you may encounter. They also allow you to practise answering questions within a specific time.
+
+4. Understand, Don't Just Memorize
+
+Try to understand the concepts behind what you are studying instead of relying entirely on memorization. Understanding a topic makes it easier to remember and apply the information during an examination.
+
+5. Take Short Breaks
+
+Studying for long periods without breaks can make it difficult to stay focused. Take short, regular breaks during your study sessions to refresh your mind before continuing.
+
+6. Read Questions Carefully
+
+During the examination, take your time to read each question carefully. Make sure you understand what the question is asking before writing your answer.
+
+7. Manage Your Time
+
+Pay attention to the time available for the examination. Avoid spending too much time on one question. If a question is difficult, move on and return to it later if time allows.
+
+8. Stay Calm and Confident
+
+Feeling nervous before an examination is normal. Take a moment to breathe, stay positive, and focus on answering the questions to the best of your ability.
+
+9. Get Enough Rest
+
+Good preparation also includes getting enough sleep. Avoid staying up extremely late to study the night before an examination. A well-rested mind can help you concentrate better.
+
+10. Review Your Answers
+
+If you finish before the examination ends, use the remaining time to review your answers. Check for unanswered questions, calculation mistakes, spelling errors, and other simple mistakes.
+
+Final Exam Reminder
+
+Success in examinations comes from consistent preparation, effective study habits, careful time management, and confidence.
+
+Remember:
+
+✅ Start studying early
+
+✅ Follow a realistic study timetable
+
+✅ Practise past questions
+
+✅ Understand your lessons
+
+✅ Read questions carefully
+
+✅ Manage your examination time
+
+✅ Stay calm and focused
+
+✅ Get enough rest
+
+With the right preparation and a positive attitude, every student can approach examinations with greater confidence and give their best effort.`,
+  },
+{
+  id: 2,
+  slug: "effective-teaching-techniques",
+  title: "Effective Teaching Techniques",
+  desc: "Discover practical teaching techniques that make learning more engaging and effective.",
+  image: "/images/blog/blog-2.jpg",
+  content: `Effective teaching goes beyond simply presenting information to students. Great teaching involves using strategies that encourage participation, improve understanding, and help students develop a lasting interest in learning.
+
+Here are some effective teaching techniques:
+
+\n\n1. Interactive Teaching
+
+\n\nEncourage students to participate actively during lessons by asking questions, starting discussions, and allowing them to share their ideas. Interactive lessons can make learning more engaging and help students understand concepts more clearly.
+
+\n\n2. Use Practical Examples
+
+\n\nConnect classroom lessons to real-life situations and everyday experiences. Practical examples help students understand how what they learn can be applied outside the classroom.
+
+\n\n3. Encourage Questions
+
+\n\nCreate a classroom environment where students feel comfortable asking questions. Questions allow teachers to identify areas where students may need additional explanations or support.
+
+\n\n4. Use Visual Learning Materials
+
+\n\nPictures, diagrams, charts, videos, and other visual materials can make difficult topics easier to understand. Visual resources can also help students remember important information.
+
+\n\n5. Group Activities
+
+\n\nOrganize students into small groups to work on projects, discussions, and classroom activities. Group work encourages teamwork, communication, problem-solving, and peer learning.
+
+\n\n6. Give Regular Feedback
+
+\n\nProvide students with constructive feedback about their work. Positive and helpful feedback allows students to understand their strengths, identify areas for improvement, and continue developing their skills.
+
+\n\n7. Adapt to Different Learning Needs
+
+\n\nStudents learn in different ways and at different speeds. Effective teachers use a variety of teaching methods and provide additional support when students need it.
+
+\n\n8. Encourage Critical Thinking
+
+\n\nAsk students questions that require them to explain, analyze, compare, and solve problems rather than simply recall information. This helps develop independent thinking and problem-solving skills.
+
+\n\n9. Create a Positive Classroom Environment
+
+\n\nA respectful, supportive, and welcoming classroom helps students feel comfortable participating in lessons. Teachers should encourage students and recognize their effort and progress.
+
+\n\n10. Make Learning Enjoyable
+
+\n\nUse educational games, activities, storytelling, demonstrations, and creative projects where appropriate. Making lessons enjoyable can increase students' interest and motivation to learn.
+
+\n\nFinal Teaching Reminder:
+
+\n\nEffective teaching is about helping students understand, participate, and grow. By combining different teaching techniques with patience, encouragement, and clear communication, teachers can create meaningful learning experiences that help every student reach their potential.`
+},
+
+];
+

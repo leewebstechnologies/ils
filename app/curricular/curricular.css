@@ -15,6 +15,7 @@ p {
   font-weight: bold;
 }
 
+
 .heroImage {
   object-fit: cover;
 }
@@ -23,7 +24,6 @@ p {
   position: absolute;
   top: 35%;
   left: 8%;
-  color: #fff;
 }
 
 .heroOverlay h1 {
