@@ -89,12 +89,34 @@ p {
   margin-top: 4.5rem;
 }
 
+.gallerySwiper {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.galleryImgWrapper {
+  position: relative;
+  width: 100%;
+  height: 450px;
+}
+
 .galleryImg {
   width: 100%;
-  height: auto;
-  border-radius: 14px;
+  height: 100%;
   object-fit: cover;
 }
+
+/* Customize Swiper Navigation & Pagination */
+.gallerySwiper .swiper-button-next,
+.gallerySwiper .swiper-button-prev {
+  color: #ffc600;
+}
+
+.gallerySwiper .swiper-pagination-bullet-active {
+  background: #ffc600;
+}
+
 
 .galleryText {
   text-align: center;
@@ -136,6 +158,10 @@ p {
 @media (max-width: 768px) {
   .hero {
     height: 45vh;
+  }
+
+  .galleryImgWrapper {
+    height: 300px;
   }
 
   .heroOverlay {

@@ -1,6 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import "./curricular.css";
 import FloatingButton from "../components/floatingButton/FloatingButton";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const Curricular = () => {
   return (
@@ -8,7 +17,7 @@ const Curricular = () => {
       <main className="curricular">
         <section className="hero">
           <Image
-            src="/images/extracurricular/1.png"
+            src="/images/extracurricular/banner.jpeg"
             alt="Extra-Curricular Activities"
             fill
             priority
@@ -76,13 +85,48 @@ const Curricular = () => {
             </div>
           </div>
           <div className="galleryBlock">
-            <Image
-              src="/images/extracurricular/1.png"
-              alt="School Photo Gallery"
-              width={1200}
-              height={350}
-              className="galleryImg"
-            />
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              navigation
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              loop={true}
+              className="gallerySwiper"
+            >
+              <SwiperSlide>
+                <div className="galleryImgWrapper">
+                  <Image
+                    src="/images/extracurricular/image1.jpeg"
+                    alt="School Photo Gallery 1"
+                    width={1200}
+                    height={450}
+                    className="galleryImg"
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="galleryImgWrapper">
+                  <Image
+                    src="/images/extracurricular/image2.jpeg"
+                    alt="School Photo Gallery 2"
+                    width={1200}
+                    height={450}
+                    className="galleryImg"
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="galleryImgWrapper">
+                  <Image
+                    src="/images/extracurricular/image3.jpeg"
+                    alt="School Photo Gallery 3"
+                    width={1200}
+                    height={450}
+                    className="galleryImg"
+                  />
+                </div>
+              </SwiperSlide>
+            </Swiper>
 
             <div className="galleryText">
               <h3>Photo Gallery</h3>
