@@ -5,6 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import "./blogDetail.css";
+import FloatingButton from "@/app/components/floatingButton/FloatingButton";
 
 const BlogDetail = () => {
   const route = usePathname();
@@ -58,6 +59,7 @@ const BlogDetail = () => {
             ))}
         </div>
       </article>
+      <FloatingButton />
     </main>
   );
 };
