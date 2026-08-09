@@ -131,7 +131,7 @@ const Curricular = () => {
             <div className="galleryText">
               <h3>Photo Gallery</h3>
               <h4>Documenting the Spirit of Achievement</h4>
-              <p>
+              <p style={{ fontWeight: "bold" }}>
                 Witness the vibrancy of our classrooms and the focus of our
                 scholars in action.
               </p>

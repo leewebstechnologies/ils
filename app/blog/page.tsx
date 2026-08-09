@@ -2,6 +2,7 @@ import Image from "next/image";
 import { blogData } from "../data";
 import BlogCard from "../components/blogCard/BlogCard";
 import "./blog.css";
+import FloatingButton from "../components/floatingButton/FloatingButton";
 const Blog = () => {
   return (
     <div className="blog">
@@ -29,6 +30,7 @@ const Blog = () => {
           ))}
         </div>
       </main>
+      <FloatingButton />
     </div>
   );
 };

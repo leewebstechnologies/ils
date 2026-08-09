@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import "./contact.css";
+import FloatingButton from "../components/floatingButton/FloatingButton";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -161,6 +162,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <FloatingButton />
     </section>
   );
 };
