@@ -99,7 +99,7 @@ export const extraCurricularData = [
   },
   {
     id: 3,
-    banner: "/images/course/chess.jpeg",
+    banner: "/images/course/1.jpeg",
     curricular: "Chess",
   },
   {
