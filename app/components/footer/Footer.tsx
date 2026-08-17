@@ -13,7 +13,12 @@ const Footer = () => {
               <div className="footer-about mt-40">
                 <div className="logo">
                   <Link href="/" className="logo">
-                    <Image src="/images/logo1.png" alt="logo" width={70} height={70} />
+                    <Image
+                      src="/images/logo1.png"
+                      alt="logo"
+                      width={70}
+                      height={70}
+                    />
                     <span className="imperial-legacy">
                       IMPERIAL&nbsp;LEGACY&nbsp;SCHOOL
                     </span>
@@ -29,28 +34,30 @@ const Footer = () => {
                 </p>
                 <ul className="mt-20">
                   <li className="social-media-icons">
-                    <Link className="a" href="/">
+                    <a
+                      className="a"
+                      href="https://www.facebook.com/share/1EFCL9bT1o"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i className="fa fa-facebook-f" />
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link className="a" href="/">
+                    <a
+                      className="a"
+                      href="/https://www.tiktok.com/@imperial_legacyschool?_t=ZM-8wBUcy17xEF&_r=1"
+                    >
                       <i className="icon fa-brands fa-tiktok"></i>
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link className="a" href="/">
+                    <a className="a" href="https://www.instagram.com/imperial_legacyschool?igsh=MXVtMGM0czlrc3ZuZw==">
                       <i className="fa-brands fa-instagram"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="a" href="/">
-                      <i className="icon fa-brands fa-square-whatsapp"></i>
-                    </Link>
+                    </a>
                   </li>
                 </ul>
-              </div>{" "}
-              {/* footer about */}
+              </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className="footer-link mt-40">
@@ -70,14 +77,7 @@ const Footer = () => {
                       Admission
                     </Link>
                   </li>
-                 
-                  <li>
-                    <Link className="a" href="/">
-                      <i className="fa fa-angle-right" />
-                      Entrance Exam
-                    </Link>
-                  </li>
-                 
+
                   <li>
                     <Link className="a" href="/">
                       <i className="fa fa-angle-right" />
@@ -92,43 +92,20 @@ const Footer = () => {
                   </li>
 
                   <li>
-                    <Link className="a" href="/">
-                      <i className="fa fa-angle-right" />
-                      Executive Director
-                    </Link>
-                  </li>
-                </ul>
-                <ul className="sitemap">
-                  <li>
-                    <Link className="a" href="/">
-                      <i className="fa fa-angle-right" />
-                      Gallery
-                    </Link>
-                  </li>
-
-                  <li>
                     <Link className="a" href="/contact">
                       <i className="fa fa-angle-right" />
                       Contact
                     </Link>
                   </li>
                 </ul>
-              </div>{" "}
-              {/* footer link */}
-            </div>
-            <div className="col-lg-2 col-md-6 col-sm-6">
-              <div className="footer-link support mt-40">
-                <div className="footer-title pb-25">
-                  <h6>Support</h6>
-                </div>
-                <ul className="sitemap">
+                {/* <ul className="sitemap">
                   <li>
-                    <Link className="a" href="/">
+                    <Link className="a" href="/contact">
                       <i className="fa fa-angle-right" />
-                      Support
+                      Contact
                     </Link>
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
@@ -153,7 +130,9 @@ const Footer = () => {
                       <i className="fa fa-phone" />
                     </div>
                     <div className="cont">
-                      <p style={{ fontWeight: "bold" }}>08139604432, 07074681927, 09060006230</p>
+                      <p style={{ fontWeight: "bold" }}>
+                        08139604432, 07074681927, 09060006230
+                      </p>
                     </div>
                   </li>
                   <li>
@@ -161,7 +140,10 @@ const Footer = () => {
                       <i className="fa fa-envelope-o" />
                     </div>
                     <div className="cont">
-                      <p style={{ fontWeight: "bold" }}>info@imperiallegacyschool.com, imperiallegacyschool@gmail.com</p>
+                      <p style={{ fontWeight: "bold" }}>
+                        info@imperiallegacyschool.com,
+                        imperiallegacyschool@gmail.com
+                      </p>
                     </div>
                   </li>
                 </ul>

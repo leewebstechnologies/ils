@@ -17,15 +17,16 @@ const Extra = () => {
         </div>
         <div className="row course-slied mt-30">
           {extraCurricularData.map((index) => (
-            <div key={index.id} className="col-lg-4">
+            <div key={index.id} className="col-lg-4 col-md-6 mb-30">
               <div className="singel-course">
                 <div className="thum">
                   <div className="image">
                     <Image
                       src={index.banner}
-                      alt="course"
-                      width={250}
-                      height={200}
+                      alt={index.curricular}
+                      width={400}
+                      height={250}
+                      className="course-image"
                     />
                   </div>
                 </div>

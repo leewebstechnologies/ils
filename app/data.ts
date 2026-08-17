@@ -89,32 +89,32 @@ export const affiliatesData = [
 export const extraCurricularData = [
   {
     id: 1,
-    banner: "/images/course/taekwondo.jpg",
+    banner: "/images/course/takwondo.jpeg",
     curricular: "Taekwondo",
   },
   {
     id: 2,
-    banner: "/images/course/chess.jpg",
-    curricular: "Chess",
-  },
-  {
-    id: 3,
     banner: "/images/course/ucmas.jpeg",
     curricular: "UCMAS",
   },
   {
+    id: 3,
+    banner: "/images/course/chess.jpeg",
+    curricular: "Chess",
+  },
+  {
     id: 4,
-    banner: "/images/course/ballet.jpg",
+    banner: "/images/course/ballet.jpeg",
     curricular: "Ballet",
   },
   {
     id: 5,
-    banner: "/images/course/music.png",
+    banner: "/images/course/music.jpeg",
     curricular: "Music",
   },
   {
     id: 6,
-    banner: "/images/course/coding.jpg",
+    banner: "/images/course/coding.jpeg",
     curricular: "Coding & Robotics",
   },
 ];

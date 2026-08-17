@@ -82,6 +82,7 @@
 
 .paragraph {
   margin: 0 0 1.5rem;
+  font-weight: bold;
 }
 
 .paragraph:last-child {

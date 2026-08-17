@@ -30,6 +30,7 @@ const Testimonial = () => {
                     alt="Testimonial"
                     width={100}
                     height={100}
+                    style={{ height: "auto", width: "auto" }}
                   />
                   <div className="quote">
                     <i className="fa fa-quote-right" />

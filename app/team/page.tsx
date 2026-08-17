@@ -20,6 +20,7 @@ const Team = () => {
                       height={300}
                       alt="Teachers"
                       className="image"
+                      style={{ height: "auto", width: "auto" }}
                     />
                   </div>
                   <div className="cont">

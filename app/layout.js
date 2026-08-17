@@ -33,7 +33,6 @@ export default function RootLayout({ children }) {
         />
         <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
 
-        <link rel="stylesheet" href="/css/styles.css" />
         <link rel="stylesheet" href="/css/slick.css" />
         <link rel="stylesheet" href="/css/animate.css" />
         <link rel="stylesheet" href="/css/nice-select.css" />
@@ -72,8 +71,6 @@ export default function RootLayout({ children }) {
 
         <Script src="/js/main.js"></Script>
 
-        <Script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></Script>
-        <Script src="/js/map-script.js"></Script>
         <Footer />
       </body>
     </html>

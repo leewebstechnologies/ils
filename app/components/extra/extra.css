@@ -1,20 +1,39 @@
-.singel-course{
+.singel-course {
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 8px;
   overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
 }
-.singel-course > .thum{
+
+.singel-course:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.singel-course > .thum {
   position: relative;
-}
-.singel-course .thum .image{
-  overflow: hidden;
-}
-.singel-course .thum .image img{
   width: 100%;
-  -webkit-transition: all 0.4s linear;
-  transition: all 0.4s linear;
 }
-.singel-course:hover .thum .image img{
+
+.singel-course .thum .image {
+  overflow: hidden;
+  width: 100%;
+}
+
+.singel-course .thum .image .course-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  -webkit-transition: transform 0.4s ease;
+  transition: transform 0.4s ease;
+}
+
+.singel-course:hover .thum .image .course-image {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -36,11 +55,12 @@
   background-color: #ffc600;
   text-align: center;
 }
-.singel-course .cont{
-  padding-top: 28px;
-  padding-bottom: 34px;
-  padding-left: 30px;
-  padding-right: 30px;
+.singel-course .cont {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 30px;
 }
 .singel-course .cont > ul{
   display: inline-block;

@@ -38,6 +38,7 @@ const Ilsteam = () => {
                           width={250}
                           height={250}
                           alt="Teachers"
+                          style={{ height: "auto", width: "auto" }}
                         />
                       </div>
                       <div className="cont">

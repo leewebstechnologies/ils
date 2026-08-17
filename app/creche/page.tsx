@@ -15,7 +15,7 @@ const Creche = () => {
     <>
       <section className="hero">
         <Image
-          src="/images/creche/creche_banner.jpg"
+          src="/images/creche/creche.jpeg"
           alt="Creche Banner"
           fill
           priority
