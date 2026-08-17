@@ -72,20 +72,20 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="a" href="/">
+                    <Link className="a" href="/admission">
                       <i className="fa fa-angle-right" />
                       Admission
                     </Link>
                   </li>
 
                   <li>
-                    <Link className="a" href="/">
+                    <Link className="a" href="/application">
                       <i className="fa fa-angle-right" />
                       Application Form
                     </Link>
                   </li>
                   <li>
-                    <Link className="a" href="/about">
+                    <Link className="a" href="/ils">
                       <i className="fa fa-angle-right" />
                       About ILS
                     </Link>
@@ -98,14 +98,6 @@ const Footer = () => {
                     </Link>
                   </li>
                 </ul>
-                {/* <ul className="sitemap">
-                  <li>
-                    <Link className="a" href="/contact">
-                      <i className="fa fa-angle-right" />
-                      Contact
-                    </Link>
-                  </li>
-                </ul> */}
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
