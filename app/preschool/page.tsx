@@ -71,7 +71,7 @@ const Preschool = () => {
           {/* HOMEWORK */}
           <div className="gradeSection">
             <Image
-              src="/images/pre-school/banner.png"
+              src="/images/pre-school/banner.jpeg"
               alt="Preschool Homework"
               width={1200}
               height={350}
