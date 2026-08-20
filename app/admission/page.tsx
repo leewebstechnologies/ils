@@ -158,6 +158,7 @@ const Admission = () => {
             <div>
               <h4>Email</h4>
               <p>finance@imperiallegacyschool.com</p>
+              <p>imperiallegacyschool@gmail.com</p>
             </div>
           </div>
         </div>

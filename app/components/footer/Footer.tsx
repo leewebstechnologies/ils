@@ -52,7 +52,10 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a className="a" href="https://www.instagram.com/imperial_legacyschool?igsh=MXVtMGM0czlrc3ZuZw==">
+                    <a
+                      className="a"
+                      href="https://www.instagram.com/imperial_legacyschool?igsh=MXVtMGM0czlrc3ZuZw=="
+                    >
                       <i className="fa-brands fa-instagram"></i>
                     </a>
                   </li>
@@ -123,7 +126,7 @@ const Footer = () => {
                     </div>
                     <div className="cont">
                       <p style={{ fontWeight: "bold" }}>
-                        08139604432, 07074681927, 09060006230
+                        08139604432, 07074681927, 09060006230, 08088824595
                       </p>
                     </div>
                   </li>
@@ -134,7 +137,8 @@ const Footer = () => {
                     <div className="cont">
                       <p style={{ fontWeight: "bold" }}>
                         info@imperiallegacyschool.com,
-                        imperiallegacyschool@gmail.com
+                        imperiallegacyschool@gmail.com,
+                        imperiallegacyschool247@gmail.com
                       </p>
                     </div>
                   </li>

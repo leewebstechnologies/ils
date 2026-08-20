@@ -139,6 +139,7 @@ const Contact = () => {
                       <p>08139604432</p>
                       <p>07074681927</p>
                       <p>09060006230</p>
+                      <p>08088824595</p>
                     </div>
                   </div>
                 </li>
@@ -150,6 +151,7 @@ const Contact = () => {
                     </div>
                     <div className="cont">
                       <p>info@imperiallegacyschool.com</p>
+                      <p>imperiallegacyschool@gmail.com</p>
                     </div>
                   </div>
                 </li>
